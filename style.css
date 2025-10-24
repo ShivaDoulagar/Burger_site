@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.main {
+  margin: 0;
+  padding: 0;
+  background: url("images/background.png");
+  background-size: cover;
+  height: 100vh;
+}
+nav {
+  position: relative;
+  display: flex;
+  height: 160px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    black,
+    rgba(0, 0, 0, 0.674),
+    rgba(0, 0, 0, 0.005)
+  );
+}
+.box {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.22;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+}
+nav span img {
+  height: 150px;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu ol {
+  color: white;
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-around;
+}
+
+.menu ol li {
+  color: white;
+  text-decoration: none;
+  margin-left: 23px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu ol li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+nav ul li a:hover {
+  color: #f0f0f0;
+}
+
+.content {
+  width: 50%;
+  height: 280px;
+  position: relative;
+  top: 9.2vh;
+  z-index: 40;
+  margin-left: 50px;
+}
+.content h1 {
+  font-size: 10rem;
+  color: white;
+}
+.content p {
+  color: rgba(255, 255, 255, 0.768);
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 30px;
+}
+.content button {
+  width: 35%;
+  height: 24%;
+  border-radius: 23px;
+  margin-left: 99px;
+  margin-top: 45px;
+  background-color: orangered;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.secondary {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/2_background.png);
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+}
+.contents2 {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.our_chef h1 {
+  font-size: 70px;
+  text-align: center;
+  color: orangered;
+}
+.our_chef {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 30vw;
+  height: 5vw;
+  position: absolute;
+  top: 8vh;
+  left: 40vw;
+}
+.content2 {
+  height: 10vh;
+  width: 80vw;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: orangered;
+  position: relative;
+  top: 20vh;
+  left: 32vw;
+}
+.chefs {
+  display: flex;
+  width: 140vw;
+  height: 50vh;
+  position: relative;
+  top: 35vh;
+  right: 19vw;
+  justify-content: space-evenly;
+}
+.chef1 {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.chef1 img {
+  height: 50%;
+  border-radius: 50%;
+  margin-top: 23px;
+}
+
+.title {
+  display: flex;
+  position: absolute;
+  top: 55%;
+}
+.title h3 {
+  color: orangered;
+  margin-top: 5px;
+  font-size: 30px;
+}
+
+.subtitle {
+  display: flex;
+  position: absolute;
+  top: 70%;
+}
+.subtitle h4 {
+  color: orangered;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.burger img {
+  width: 200px;
+  position: absolute;
+  top: 13vh;
+  right: 8vw;
+  transform: rotate(45deg);
+}
+
+.fires img {
+  width: 140px;
+  position: absolute;
+  top: 53vh;
+  right: 90%;
+}
+.garlic img {
+  width: 120px;
+  position: absolute;
+  top: 20vh;
+  right: 75%;
+}
+.leaf img {
+  width: 100px;
+  position: absolute;
+  top: 80%;
+  right: 75%;
+  transform: rotate(45deg);
+}
+.mushroom img {
+  width: 70px;
+  position: absolute;
+  top: 85%;
+  right: 40%;
+}
+.vegetable img {
+  width: 140px;
+  position: absolute;
+  top: 70%;
+  right: 10%;
+}
+.third {
+  width: 100v;
+  height: 100vh;
+  background-color: rgba(255, 64, 0, 0.831);
+}
+.background {
+  display: flex;
+}
+.left3 {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.right3 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+.burger3 img {
+  width: 100%;
+  top: 63px;
+  border-radius: 50%;
+}
+.burger3 {
+  position: absolute;
+  bottom: 35vh;
+}
+.headding {
+  display: flex;
+  justify-content: center;
+}
+.best_burger h2 {
+  font-size: 80px;
+  top: 30vh;
+  color: white;
+}
+.best_burger p {
+  font-size: 20px;
+  width: 40vw;
+  font-weight: 200;
+  color: white;
+}
+.sub_heading3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.best_burger button {
+  width: 40%;
+  height: 25%;
+  border-color: white;
+  position: absolute;
+  left: 30%;
+  margin-top: 5%;
+  border-radius: 23px;
+  background-color: rgb(255, 255, 255);
+  color: orangered;
+  font-size: 20px;
+  cursor: pointer;
+}
+.best_burger {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 30vh;
+}
+.best_burger button:hover {
+  background-color: orangered;
+  color: white;
+  border-color: orangered;
+}
+
+.background4 {
+  width: 100%;
+  height: 100vh;
+}
+
+.left4 {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.left4 p {
+  width: 80%;
+  font-size: 23px;
+  color: orangered;
+  font-weight: 50px;
+}
+.left4 h2 {
+  font-size: 90px;
+  color: orangered;
+  position: absolute;
+  top: 25vh;
+  left: 10%;
+}
+
+.cashback {
+  font-size: 23rem;
+}
