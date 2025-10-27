@@ -1,18 +1,22 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  overflow-x: hidden;
 }
 .main {
   margin: 0;
   padding: 0;
   background: url("images/background.png");
   background-size: cover;
+  background-position: center;
   height: 100vh;
+  min-height: 600px;
 }
 nav {
   position: relative;
@@ -80,7 +84,7 @@ nav ul li a:hover {
   margin-left: 50px;
 }
 .content h1 {
-  font-size: 10rem;
+  font-size: 100px;
   color: white;
 }
 .content p {
@@ -100,6 +104,7 @@ nav ul li a:hover {
   color: white;
   font-size: 20px;
   cursor: pointer;
+  border: none;
 }
 .secondary {
   width: 100%;
@@ -108,8 +113,9 @@ nav ul li a:hover {
   margin: 0;
   padding: 0;
   background-size: cover;
-  height: 100vh;
+  background-position: center;
   display: flex;
+  min-height: 600px;
 }
 .contents2 {
   display: flex;
@@ -229,9 +235,10 @@ nav ul li a:hover {
   right: 10%;
 }
 .third {
-  width: 100v;
+  width: 100%;
   height: 100vh;
   background-color: rgba(255, 64, 0, 0.831);
+  min-height: 600px;
 }
 .background {
   display: flex;
@@ -336,4 +343,641 @@ nav ul li a:hover {
 
 .cashback {
   font-size: 23rem;
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+  nav {
+    height: 120px;
+    padding: 10px 15px;
+  }
+
+  nav span img {
+    height: 100px;
+  }
+
+  .menu ol li {
+    margin-left: 15px;
+    font-size: 16px;
+  }
+  .best_burger {
+    margin-top: -180px;
+  }
+  .content {
+    width: 70%;
+    margin-left: 30px;
+  }
+
+  .content h1 {
+    font-size: 70px;
+  }
+
+  .content p {
+    font-size: 22px;
+  }
+
+  .content button {
+    width: 45%;
+    margin-left: 50px;
+    font-size: 18px;
+  }
+
+  .our_chef h1 {
+    font-size: 50px;
+  }
+
+  .content2 {
+    font-size: 18px;
+    width: 85vw;
+    left: 28vw;
+  }
+
+  .color_chef {
+    background-color: #f6efe0 !important;
+  }
+
+  .chefs {
+    top: 40vh;
+    right: 15vw;
+  }
+
+  .burger img {
+    width: 150px;
+  }
+
+  .fires img {
+    width: 100px;
+  }
+
+  .garlic img {
+    width: 90px;
+  }
+
+  .leaf img {
+    width: 80px;
+  }
+
+  .mushroom img {
+    width: 60px;
+  }
+
+  .vegetable img {
+    width: 110px;
+  }
+
+  .best_burger h2 {
+    font-size: 60px;
+  }
+
+  .best_burger p {
+    font-size: 18px;
+    width: 45vw;
+  }
+
+  .left4 h2 {
+    font-size: 70px;
+  }
+
+  .left4 p {
+    font-size: 20px;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  nav {
+    height: 100px;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav span img {
+    height: 60px;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  .menu ol {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu ol li {
+    margin: 5px 10px;
+    font-size: 14px;
+  }
+
+  .content {
+    width: 90%;
+    margin-left: 20px;
+    top: 5vh;
+  }
+
+  .content h1 {
+    font-size: 50px;
+  }
+
+  .content p {
+    font-size: 18px;
+  }
+
+  .content button {
+    width: 60%;
+    margin-left: 20%;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .secondary {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .contents2 {
+    height: auto;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .our_chef {
+    position: static;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+  }
+
+  .our_chef h1 {
+    font-size: 40px;
+  }
+
+  .content2 {
+    position: static;
+    width: 90%;
+    margin: 20px auto;
+    font-size: 16px;
+    left: 0;
+  }
+
+  .chefs {
+    position: static;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin: 30px 0;
+    right: 0;
+  }
+
+  .chef1 {
+    width: 80%;
+    height: 300px;
+    margin-bottom: 40px;
+  }
+
+  .chef1 img {
+    height: 60%;
+  }
+
+  .title h3 {
+    font-size: 24px;
+  }
+
+  .subtitle h4 {
+    font-size: 18px;
+  }
+
+  .burger img,
+  .fires img,
+  .garlic img,
+  .leaf img,
+  .mushroom img,
+  .vegetable img {
+    display: none;
+  }
+
+  .third {
+    height: auto;
+    max-height: 100vh !important;
+    overflow: hidden;
+  }
+
+  .background {
+    flex-direction: column;
+  }
+
+  .burger3 {
+    margin-top: -60px !important;
+  }
+
+  .left3,
+  .right3 {
+    width: 100%;
+    height: 50vh;
+    min-height: 400px;
+  }
+
+  .burger3 {
+    position: static;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .burger3 img {
+    width: 100%;
+    max-width: 300px;
+    top: 0;
+  }
+
+  .best_burger {
+    position: static;
+    padding: 30px 20px;
+    /* padding-top: -100px !important; */
+  }
+
+  .best_burger h2 {
+    font-size: 40px;
+  }
+
+  .best_burger p {
+    font-size: 16px;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .best_burger button {
+    position: static;
+    width: 60%;
+    margin: 30px auto 0;
+    left: 0;
+  }
+
+  .background4 {
+    height: auto;
+    min-height: 50vh;
+  }
+
+  .left4 {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .left4 h2 {
+    position: static;
+    font-size: 50px;
+    margin-bottom: 20px;
+    left: 0;
+  }
+
+  .left4 p {
+    width: 90%;
+    font-size: 18px;
+  }
+}
+
+.right4 {
+  width: 100vw !important;
+}
+.location-details {
+  max-width: 40vw !important;
+}
+
+.for_mobile_chefs {
+  display: none;
+}
+
+.location-header {
+  width: 100vw !important;
+}
+
+/* Small Mobile Styles */
+@media screen and (max-width: 480px) {
+  .content h1 {
+    font-size: 35px;
+  }
+
+  .menu {
+    visibility: hidden;
+  }
+
+  nav {
+    display: block;
+  }
+  .your-logo {
+    margin-left: 30px;
+  }
+
+  .content {
+    margin-top: 190px;
+    display: flex;
+    flex-direction: column;
+  }
+  .order_now_btn {
+    width: 35vw !important;
+    height: 40px !important;
+    margin-left: -5px !important;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+
+  .content button {
+    width: 70%;
+    font-size: 14px;
+  }
+
+  .our_chef h1 {
+    font-size: 32px;
+  }
+  .for_mobile_chefs {
+    display: block;
+  }
+  .content2 {
+    font-size: 14px;
+  }
+
+  .content2 p {
+    font-size: 13px;
+    margin-top: -80px;
+  }
+
+  .chefs {
+    display: none;
+  }
+
+  .chef1 {
+    width: 90%;
+  }
+
+  .title h3 {
+    font-size: 20px;
+  }
+
+  .subtitle h4 {
+    font-size: 16px;
+  }
+
+  .best_burger h2 {
+    font-size: 32px;
+  }
+
+  .best_burger p {
+    font-size: 14px;
+  }
+
+  .best_burger button {
+    width: 70%;
+    font-size: 14px;
+  }
+
+  .left4 h2 {
+    font-size: 36px;
+  }
+
+  .left4 p {
+    font-size: 16px;
+  }
+}
+
+.background4 {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.right4 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  background-color: white;
+}
+
+.location-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.location-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.location-icon {
+  font-size: 50px;
+  color: orangered;
+}
+
+.location-header h3 {
+  font-size: 45px;
+  color: orangered;
+}
+
+.location-details {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(255, 69, 0, 0.1);
+}
+
+.location-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.location-item:last-child {
+  margin-bottom: 0;
+}
+
+.location-item i {
+  font-size: 20px;
+  color: orangered;
+  margin-top: 3px;
+  min-width: 20px;
+}
+
+.location-item p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.map-container {
+  margin-top: 20px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 60px 20px 20px;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-section h3 {
+  color: orangered;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  color: orangered;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-section p {
+  color: #cccccc;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+.footer-section ul li a:hover {
+  color: orangered;
+  padding-left: 5px;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+.contact-info li i {
+  color: orangered;
+  font-size: 16px;
+  min-width: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  background-color: orangered;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: white;
+  color: orangered;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  text-align: center;
+  color: #999;
+}
+
+.footer-bottom i {
+  color: orangered;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .background4 {
+    flex-direction: column;
+  }
+
+  .left4,
+  .right4 {
+    width: 100%;
+    min-height: 50vh;
+  }
+
+  .left4 h2 {
+    font-size: 50px;
+  }
+
+  .left4 p {
+    font-size: 18px;
+  }
+
+  .location-header h3 {
+    font-size: 32px;
+  }
+
+  .location-icon {
+    font-size: 35px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .left4 h2 {
+    font-size: 36px;
+  }
+
+  .left4 p {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  .location-header h3 {
+    font-size: 28px;
+  }
+
+  .location-details {
+    padding: 20px;
+  }
+
+  .location-item {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    padding: 40px 15px 15px;
+  }
 }

@@ -16,12 +16,16 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </head>
+
 
 <body>
   <div class="main">
     <nav>
-      <span><img src="images/logo.png" alt="" /></span>
+      <span><img class="your-logo" src="images/logo.png" alt="" /></span>
       <div class="menu">
         <ol>
           <li><a href="">Home</a></li>
@@ -39,7 +43,7 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
         fugit expedita nemo, reprehenderit inventore explicabo.
       </p>
-      <button>ORDER NOW</button>
+      <button class="order_now_btn"> ORDER NOW</button>
     </div>
   </div>
   <div class="secondary">
@@ -83,6 +87,89 @@
           </div>
         </div>
       </div>
+      <div class="for_mobile_chefs">
+        <div class="chefs d-none d-md-flex justify-content-center gap-4">
+          <div class="chef1 text-center">
+            <img src="images/2nd_page/women1.png" alt="Shreya" class="img-fluid rounded-circle" />
+            <div class="title">
+              <h3>Shreya</h3>
+            </div>
+            <div class="subtitle">
+              <h4>Founder</h4>
+            </div>
+          </div>
+
+          <div class="chef1 text-center">
+            <img src="images/2nd_page/men.png" alt="Andrew" class="img-fluid rounded-circle" />
+            <div class="title">
+              <h3>Andrew</h3>
+            </div>
+            <div class="subtitle">
+              <h4>Co-Founder</h4>
+            </div>
+          </div>
+
+          <div class="chef1 text-center">
+            <img src="images/2nd_page/women2.png" alt="Jessika" class="img-fluid rounded-circle" />
+            <div class="title">
+              <h3>Jessika</h3>
+            </div>
+            <div class="subtitle">
+              <h4>Co-Founder</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile View (Carousel - visible on small screens) -->
+        <div id="carouselExample" class="carousel slide d-md-none" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="card color_chef text-center border-0">
+                <img src="images/2nd_page/women1.png" class="card-img-top rounded-circle w-50 mx-auto mt-3"
+                  alt="Shreya">
+                <div class="card-body">
+                  <h5 class="card-title">Shreya</h5>
+                  <p class="card-text">Founder</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card color_chef text-center border-0">
+                <img src="images/2nd_page/men.png" class="card-img-top rounded-circle w-50 mx-auto mt-3" alt="Andrew">
+                <div class="card-body">
+                  <h5 class="card-title">Andrew</h5>
+                  <p class="card-text">Co-Founder</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card color_chef text-center border-0">
+                <img src="images/2nd_page/women2.png" class="card-img-top rounded-circle w-50 mx-auto mt-3"
+                  alt="Jessika">
+                <div class="card-body">
+                  <h5 class="card-title">Jessika</h5>
+                  <p class="card-text">Co-Founder</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
       <span class="burger">
         <img src="images/2nd_page/burger_bacground.png" alt="" />
       </span>
@@ -111,7 +198,7 @@
         </span>
       </div>
       <div class="right3">
-        <div class="best_burger">
+        <div class="best_burger d-flex flex-column  justify-content-center">
           <div class="headding">
             <h2>Best burger</h2>
           </div>
@@ -123,26 +210,107 @@
               minima consectetur voluptas nemo tempore fugit cum?
             </p>
           </div>
-          <button>ORDER NOW</button>
+          <div>
+            <button class="order_now_btn">ORDER NOW</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="fourth">
-    <div class="background4">
-      <div class="left4">
-        <h2>
-          Big burger
-        </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat asperiores, saepe doloribus debitis
-          voluptatem amet .</p>
+    <div class="background4 d-flex justify-content-around">
+      <div class="right4  d-flex justify-content-between flex-row">
+        <div class="location-container d-flex justify-content-center  flex-column ">
+          <div class="w-100 location-header d-flex justify-content-center r">
+            <i class="fas fa-map-marker-alt location-icon"></i>
+            <h3 class="">Visit Us</h3>
+          </div>
+          <div class="d-flex flex-wrap">
+
+            <div class="location-details">
+              <div class="location-item">
+                <i class="fas fa-map-pin"></i>
+                <p>Hyderabad<br>Warsiguda, 500061 </p>
+              </div>
+              <div class="location-item">
+                <i class="fas fa-phone"></i>
+                <p>+91 9491555572</p>
+              </div>
+              <div class="location-item">
+                <i class="fas fa-envelope"></i>
+                <p>@bigburger.com</p>
+              </div>
+              <div class="location-item">
+                <i class="fas fa-clock"></i>
+                <p>Mon - Sat: 10:00 AM - 10:00 PM<br>Sunday: 11:00 AM - 9:00 PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.9384418767518!2d78.51411357593285!3d17.414741602015038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb997791f208d3%3A0x2a5550e96a442966!2sRegional%20Centre%20for%20Urban%20and%20Environmental%20Studies!5e0!3m2!1sen!2sin!4v1761586765415!5m2!1sen!2sin"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
       </div>
-      <div class="right4"></div>
     </div>
   </div>
-  <div class="fifth"></div>
-  <div class="sixth"></div>
-  <div class="seventh"></div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Big Burger</h3>
+        <p>Serving the best burgers in town since 2010. Quality ingredients, unforgettable taste.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#">Burgers</a></li>
+          <li><a href="#">Fries</a></li>
+          <li><a href="#">Drinks</a></li>
+          <li><a href="#">Desserts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <ul class="contact-info">
+          <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+          <li><i class="fas fa-envelope"></i> info@bigburger.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> 123 Burger Street, NY</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Big Burger. All Rights Reserved. | Designed with <i class="fas fa-heart"></i></p>
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
