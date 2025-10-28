@@ -85,6 +85,7 @@ nav ul li a:hover {
   height: 280px;
   position: relative;
   top: 9.2vh;
+  margin-top: 80px;
   z-index: 40;
   margin-left: 50px;
 }
@@ -558,13 +559,20 @@ nav ul li a:hover {
     font-size: 18px;
   }
 
-  .burger img,
+  .burger img {
+    display: block;
+    left: 90vw;
+  }
+
+  .vegetable img {
+    left: 80vw;
+  }
   .fires img,
   .garlic img,
   .leaf img,
   .mushroom img,
   .vegetable img {
-    display: none;
+    display: block;
   }
 
   .third {
