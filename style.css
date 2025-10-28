@@ -66,6 +66,11 @@ nav span img {
   cursor: pointer;
 }
 
+iframe {
+  max-width: 100vw !important;
+  overflow: hidden !important;
+}
+
 .menu ol li a {
   text-decoration: none;
   cursor: pointer;
@@ -374,6 +379,11 @@ nav ul li a:hover {
 
   .content p {
     font-size: 22px;
+  }
+
+  iframe {
+    max-width: 75vw !important;
+    overflow: hidden !important;
   }
 
   .content button {
